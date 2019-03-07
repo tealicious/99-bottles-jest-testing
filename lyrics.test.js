@@ -6,31 +6,31 @@ Take one down and pass it around, 98 bottles of beer on the wall.`;
   expect(new Lyrics().verse(99)).toBe(verseText);
 });
 
-test.skip("another verse", () => {
+test("another verse", () => {
   const verseText = `89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.`;
   expect(new Lyrics().verse(89)).toBe(verseText);
 });
 
-test.skip("test verse of 2", () => {
+test("test verse of 2", () => {
   const verseText = `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.`;
   expect(new Lyrics().verse(2)).toBe(verseText);
 });
 
-test.skip("test verse of 1", () => {
+test("test verse of 1", () => {
   const verseText = `1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.`;
   expect(new Lyrics().verse(1)).toBe(verseText);
 });
 
-test.skip("test verse of 0", () => {
+test("test verse of 0", () => {
   const verseText = `No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.`;
   expect(new Lyrics().verse(0)).toBe(verseText);
 });
 
-test.skip("two verses", () => {
+test("two verses", () => {
   const verseText = `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
@@ -39,7 +39,7 @@ Take one down and pass it around, 97 bottles of beer on the wall.`;
   expect(new Lyrics().verses(99, 98)).toBe(verseText);
 });
 
-test.skip("three verses", () => {
+test("three verses", () => {
   const verseText = `2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 
@@ -51,7 +51,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.`;
   expect(new Lyrics().verses(2, 0)).toBe(verseText);
 });
 
-test.skip("the whole song", () => {
+test("the whole song", () => {
   const verseText = `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
